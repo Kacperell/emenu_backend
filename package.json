@@ -1,0 +1,28 @@
+{
+  "name": "emenu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Kacperel",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.5",
+    "firebase-admin": "^9.2.0",
+    "i18next": "^19.8.4",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "i18next-http-backend": "^1.0.21",
+    "mongoose": "^5.10.7",
+    "nodemon": "^2.0.4",
+    "react-i18next": "^11.7.3",
+    "stripe": "^8.132.0"
+  }
+}
